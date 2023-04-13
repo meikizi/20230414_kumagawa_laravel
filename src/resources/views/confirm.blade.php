@@ -69,11 +69,13 @@
             </div>
         </form>
         <form class="form" action="{{ route('edits') }}" method="post">
+            @csrf
             <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}" />
             <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}" />
             <input type="hidden" name="gender" value="{{ $contact['gender'] === '1'  ? '1' : '2' }}" />
             <input type="hidden" name="email" value="{{ $contact['email'] }}" />
             <input type="hidden" name="postcode" value="{{ $contact['postcode'] }}" />
+            <input type="hidden" name="address" value="{{ $contact['address'] }}" />
             <input type="hidden" name="building_name" value="{{ $contact['building_name'] }}" />
             <input type="hidden" name="opinion" value="{{ $contact['opinion'] }}" />
             <button class="form__button-redirect" type="submit">修正する</button>

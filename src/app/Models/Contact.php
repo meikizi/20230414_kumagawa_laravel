@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use DateTimeInterface;
 
 class Contact extends Model
 {
@@ -19,13 +18,16 @@ class Contact extends Model
         'postcode',
         'address',
         'building_name',
-        'opinion'
+        'opinion',
+        'created_at',
+        'updated_at'
     ];
 
-    protected function serializeDate(DateTimeInterface $date)
-    {
-        return $date->format('Y/m/d');
-    }
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'created_at'        => 'datetime:Y/m/d',
+        'updated_at'        => 'datetime:Y/m/d',
+    ];
 
     public function scopeFullnameSearch($query, $fullname)
     {

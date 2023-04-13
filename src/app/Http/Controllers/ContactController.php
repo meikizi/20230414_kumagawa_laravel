@@ -8,9 +8,10 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    public function index()
+    public function index(Contact $contact)
     {
-        return view('index');
+        $contact = Session()->get('contact');
+        return view('index', compact('contact'));
     }
 
     public function confirm(ContactRequest $request)
@@ -19,10 +20,9 @@ class ContactController extends Controller
         return view('confirm', compact('contact'));
     }
 
-    public function edit(Request $request)
+    public function edit()
     {
-        $contact = $request->only(['last_name', 'first_name', 'gender', 'email', 'postcode', 'address', 'building_name', 'opinion']);
-        return back()->with(compact('contact'));
+        return redirect('/')->withInput();
     }
 
     public function store(Request $request)
