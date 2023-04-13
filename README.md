@@ -28,3 +28,4 @@ https://github.com/meikizi/laravel-test/issues/2#issue-1666066411
 
 ## 実装できなかったもの
 管理システムページの登録日検索の実装
+created_at,updated_atのフォーマットを変更できませんでした。
