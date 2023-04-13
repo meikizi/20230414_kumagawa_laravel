@@ -15,8 +15,9 @@ https://github.com/meikizi/laravel-test/issues/1#issue-1666064146
 PHPのフレームワークLaravelを学ぶために作成しました。
 
 ## 機能一覧
-検索機能
-削除機能
+データベースにデータを登録する機能
+データベースのデータを検索する機能
+データベースのデータを削除する機能
 
 ## 使用技術(実行環境)
 Laravel Framework 8.83.8
