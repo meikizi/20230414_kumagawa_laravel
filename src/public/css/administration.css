@@ -1,0 +1,204 @@
+.contact-form__content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.contact-form__heading {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.contact-form__inner {
+    margin: 0 20px 36px;
+    border: 1px solid #000;
+}
+
+.search-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.search-form__outer-group {
+    display: flex;
+}
+
+.search-form__group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.search-form__group:nth-child(1) {
+    width: 60%;
+}
+
+.search-form__group-title--name,
+.search-form__group-title--gender,
+.search-form__group-title {
+    width: 14%;
+    padding-top: 12px;
+    text-align: left;
+}
+
+.search-form__group-title--name {
+    width: 37%;
+}
+
+.search-form__group-title--gender {
+    width: 10%;
+}
+
+
+.search-form__input input {
+    padding: 12px;
+    width: 210px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+}
+
+.search-form__input--radio {
+    display: flex;
+}
+
+.input--radio {
+    appearance: none;
+    position: absolute;
+}
+
+.input--radio-gender {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.input--radio-gender::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.input--radio:checked+.input--radio-gender::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: 15px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-clear-button {
+    -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+.timestamps--span {
+    padding: 0 16px;
+}
+
+.search-form__button {
+    margin-top: 32px;
+}
+
+.search-form__button-submit {
+    width: 120px;
+    height: 48px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form__button-reset {
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.database {
+    margin: 0 20px;
+}
+
+.database__header,
+.database__data {
+    display: flex;
+}
+
+.database__header {
+    border-bottom: 1px solid #000;
+}
+
+.database__p--id,
+.database__p--name,
+.database__p--gender,
+.database__p--email,
+.database__p--opinion {
+    width: 120px;
+    padding: 16px 0 8px;
+}
+
+.database__p--id {
+    padding-left: 32px;
+}
+
+.database__p--email {
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.database__p--email:hover {
+    overflow: visible;
+}
+
+.database__p--opinion {
+    width: 430px;
+    margin-right: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.database__p--opinion:hover {
+    overflow: visible;
+}
+
+.database__button-delete {
+    padding: 0 16px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+}

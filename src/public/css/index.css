@@ -1,0 +1,153 @@
+.contact-form__content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__group:nth-of-type(2) {
+    margin-bottom: 24px;
+}
+
+.form__group-title {
+    margin-top: 12px;
+}
+
+.form__label-required {
+    margin-left: 4px;
+    color: red;
+}
+
+.form__input--text:last-child {
+    margin-bottom: 16px;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--name {
+    width: 100%;
+    display: flex;
+}
+
+.form__input--name input,
+.form__input--text input,
+.form__input--address input,
+.form__input--textarea textarea {
+    padding: 12px;
+    width: 660px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+}
+
+.form__input--name input,
+.form__input--text input,
+.form__input--address input {
+    height: 40px;
+}
+
+.form__input--name input {
+    width: calc((660px / 2) - (16px / 2));
+}
+
+.form__input--name input:first-child {
+    margin-right: 16px;
+}
+
+.form__group-content--radio {
+    width: 79%;
+}
+
+.form__input--radio {
+    display: flex;
+}
+
+.input--radio {
+    appearance: none;
+    position: absolute;
+}
+
+.input--radio-gender {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    position: relative;
+}
+
+.input--radio-gender::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.input--radio:checked+.input--radio-gender::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: 15px;
+}
+
+.input--address-item {
+    margin-right: 16px;
+}
+
+.form__input--address input {
+    width: 620px;
+}
+
+.placeholder {
+    text-align: left;
+    margin-left: 16px;
+    padding-top: 8px;
+    color: #aaa;
+}
+
+.placeholder:nth-child(3) {
+    margin-left: 60px;
+}
+
+.form__input--textarea textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form__button {
+    margin-top: 32px;
+}
+
+.form__button-submit {
+    width: 20%;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
